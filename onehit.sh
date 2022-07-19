@@ -21,7 +21,7 @@ banner(){
 
 onehit_menu(){
     banner
-    printf "| \e[0m\e[96mOneShot UI v1\e[0m | \e[0m\e[95mgithub.com/rkhunt3r/onehit\e[0m | $updates_string |"
+    printf "| \e[0m\e[96mOneShot UI v1.test\e[0m | \e[0m\e[95mgithub.com/rkhunt3r/onehit\e[0m | $updates_string |"
 }
 
 check_update
