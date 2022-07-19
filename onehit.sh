@@ -24,4 +24,5 @@ onehit_menu(){
     printf "| \e[0m\e[96mOneShot UI v1\e[0m | \e[0m\e[95mgithub.com/rkhunt3r/onehit\e[0m | $updates_string"
 }
 
+check_update
 onehit_menu
