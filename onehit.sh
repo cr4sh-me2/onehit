@@ -23,8 +23,7 @@ update_me(){
         git pull
         printf "\n\e[0m[\e[92mi\e[0m] Done! Press [ENTER] to run updated script \n"
         read ener_empty_value
-        exit
-        sudo bash onehit.sh
+        exit && sudo bash onehit.sh
 
     else
         printf "\n\e[0m[\e[91m!\e[0m] There is no updates avaiable! \n"
