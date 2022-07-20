@@ -1,7 +1,5 @@
 #!/bin/bash
 
-interface=wlan0
-
 check_update(){
     changed=0
     git remote update && LC_ALL=C git status -uno | grep -q 'Your branch is behind' && changed=1
@@ -36,12 +34,6 @@ banner(){
     cat config/banner.txt
 }
 
-scan_wps(){
-    banner
-    printf "\n\e[0m[\e[92mi\e[0m] Scanning on default interface \e[92m$interface\e[0m, you can change it in settings"
-    printf "\n\e[0m[\e[93m*\e[0m] Searching for wps networks! Please wait... \n"
-}
-
 settings_menu(){
     banner
     printf "
@@ -68,8 +60,8 @@ onehit_menu(){
 
 [ Choose option: ]
 
-[1] Scan for WPS networks
-[2] Configure & run OneShot
+[1] Option1 
+[2] Option2
 [3] Settings
 [*] Exit
 
@@ -77,8 +69,8 @@ onehit_menu(){
 read -p "Choice: " menuchoice
 
 case $menuchoice in
-1) scan_wps;;
-2) start_oneshot;;
+1) op1;;
+2) op2;;
 3) settings_menu;;
 *) exit;;
 esac
